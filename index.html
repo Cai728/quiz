@@ -7,23 +7,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-blue-600">
-    <!-- <div class="container m-0 p-0 font-sans box-border"> -->
-        <div class=" bg-white w-2/4 max-w-2xl mt-28 ml-auto mr-auto mb-0 rounded-lg p-7"> <!--quiz container> -->
-            <h1 class="font-serif text-blue-700 text-2xl font-semibold">Quiz</h1>
-                <h2 id="question" class="question">Question goes here</h2>
-                <div id="answer-radios"> <!--radio container-->
-                    <input type="radio" name="answer" class="m-2">Answer 1</radio>
-                    <br>
-                    <input type="radio" name="answer" class="m-2">Answer 2</radio>
-                    <br>
-                    <input type="radio" name="answer" class="m-2">Answer 3</radio>
-                    <br>
-                    <input type="radio" name="answer" class="m-2">Answer 4</radio>
-                      
-                </div>
-                <button id="next-btn" class="bg-blue-700 text-white font-medium w-24 border-0 p-2  mt-5 ml-auto mr-auto mb-0 rounded cursor-pointer block">Next Question</button>
-     </div>
-    <!-- </div> -->
+    <div class="bg-white w-2/4 max-w-2xl mt-28 ml-auto mr-auto mb-0 rounded-lg p-7">
+        <h1 class="font-serif text-blue-700 text-2xl font-semibold">Quiz</h1>
+        <h2 id="question" class="question">Question goes here</h2>
+        <div id="answer-radios">
+            <input type="radio" name="answer" class="m-2" id="answer1"><label for="answer1">Answer 1</label><br>
+            <input type="radio" name="answer" class="m-2" id="answer2"><label for="answer2">Answer 2</label><br>
+            <input type="radio" name="answer" class="m-2" id="answer3"><label for="answer3">Answer 3</label><br>
+            <input type="radio" name="answer" class="m-2" id="answer4"><label for="answer4">Answer 4</label><br>
+        </div>
+        <button id="next-btn" class="bg-blue-700 text-white font-medium w-24 border-0 p-2 mt-5 ml-auto mr-auto mb-0 rounded cursor-pointer block" onclick="checkAnswer()">Next Question</button>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
